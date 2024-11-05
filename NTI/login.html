@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerec Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login_regs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="container top-nav">
+            <a href="#" class="logo"><img src="img/logo-black.png" alt=""></a>
+            <form action="" class="search">
+                <input type="search" placeholder="Search for products...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="cart_header">
+                <div onclick="open_cart()" class="icon_cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="count_item">0</span>
+                </div>
+                <div class="total_price">
+                    <p>My Cart:</p>
+                    <p class="price_cart_Head">$0</p>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="links container">
+                <ul>
+                    <li ><a href="index.html">Home</a></li>
+                    <li><a href="">All Products</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="loging_signup">
+                    <a href="signup.html">sign up <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="cart">
+        <div class="top_cart">
+            <h3>My Cart <span class="count_item_cart">(0Item in Cart)</span></h3>
+            <span onclick="close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+        <div class="items_in_cart">
+        
+        </div>
+        <div class="bottom_Cart">
+            <div class="total">
+                <p>Cart subtotal </p>
+                <p class="price_cart_total">$0</p>
+            </div>
+            <div class="button_Cart">
+                <a href="#" class="btn_cart">proceed to checkout</a>
+                <button class="btn_cart trans_bg">Shop more</button>
+            </div>
+        </div>
+    </div>
+    <section class="signin sec_form">
+        <div class="form_container">
+            <p class="title">Welcome back</p> 
+            <form action="" class="form" onsubmit="signIn(event)" autocomplete="off">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="password" required>
+                <p class="page-link">
+                    <a href="" class="page-link-label">Forgot Password?</a>
+                </p>
+                <button class="form-btn">Login</button>
+            </form>
+            <p class="sign-up-lable">
+                Don't have an account? <a href="signup.html" class="sign-up-link">Sign Up</a>
+            </p>
+
+            <div class="buttons-container">
+                <div class="apple-login-button">
+                    <i class="fa-brands fa-apple"></i>
+                    <span>login with Apple</span>
+                </div>
+                
+                <div class="google-login-button">
+                    <i class="fa-brands fa-google"></i>
+                    <span>login with Google</span>
+                </div>
+            
+        </div>
+    </section>
+
+
+    <footer>
+
+        
+        <div class="bottom_footer">
+            <div class="container">
+                <p>Copyright &copy; <span>Topico</span> all rights</p>
+
+                <div class="payment_img">
+                    <img src="img/payment-1.png" alt="">
+                    <img src="img/payment-2.png" alt="">
+                    <img src="img/payment-3.png" alt="">
+                    <img src="img/payment-4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/login_regs.js"></script>
+</body>
+</html>
